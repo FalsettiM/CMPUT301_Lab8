@@ -50,7 +50,7 @@ public class CustomListTest {
         assertFalse(list.hasCity(city));
         // Add city and check for that city and a non existent city
         City city2 = new City("Charlottetown", "Prince Edward Island");
-        list.add(city2);
+        list.addCity(city2);
         assertTrue(list.hasCity(city2));
         assertFalse(list.hasCity(city));
     }
