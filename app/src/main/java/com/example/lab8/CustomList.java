@@ -80,13 +80,13 @@ public class CustomList extends ArrayAdapter<City> {
      * @throws IllegalArgumentException If the city is not found in the list
      */
     public void delete(City city) {
-//        if (this.hasCity(city)) {
-//            // Delete
-//            cities.remove(city);
-//        } else {
-//            // Throw exception
-//            throw new IllegalArgumentException();
-//        }
+        if (this.hasCity(city)) {
+            // Delete
+            cities.remove(city);
+        } else {
+            // Throw exception
+            throw new IllegalArgumentException();
+        }
     }
 
 }
